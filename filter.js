@@ -1,3 +1,7 @@
+// Problem 1
+
+
+
 const array = [
     {
         name : "Tania",
@@ -21,11 +25,11 @@ const array = [
     }
 ]
 
-const mapFunction = () => {
-    const filteredData = array.filter(gender => gender.gender !== 'female').map(person => person.name)
+const mapFunction = (info) => {
+    const filteredData = info.filter(gender => gender.gender !== 'female').map(person => person.name)
 
     return filteredData
     
 }
 
-console.log(mapFunction())
+console.log(mapFunction(array))
